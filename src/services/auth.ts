@@ -1,6 +1,6 @@
 
 /**
- * Authentication service for Gifted Tech
+ * Authentication service for Cyber X Devs
  */
 
 export interface User {
@@ -22,8 +22,8 @@ export interface RegisterData extends LoginCredentials {
 // Mock user for demonstration
 const MOCK_USER: User = {
   id: '4534927558823005602896',
-  name: 'Gifted DemoUser',
-  email: 'demouser@giftedtech.web.id',
+  name: 'Cyber X Devs DemoUser',
+  email: 'cyberxdevs@gmail.com',
   avatar: 'https://zanalydpkhnbrjipfldc.supabase.co/storage/v1/object/public/juustgifted//gifted-fav.png',
 };
 
@@ -61,7 +61,7 @@ export const login = async (credentials: LoginCredentials): Promise<{ success: b
     await new Promise(resolve => setTimeout(resolve, 1000));
     
     // Simulate successful login (in a real app, this would validate against a backend)
-    if (credentials.email === 'demouser@giftedtech.web.id' && credentials.password === 'demo@123') {
+    if (credentials.email === 'cyberxdevs@gmail.com' && credentials.password === 'demo@123') {
       currentUser = MOCK_USER;
       localStorage.setItem(AUTH_STORAGE_KEY, JSON.stringify(currentUser));
       notifyObservers();
