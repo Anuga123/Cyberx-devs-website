@@ -9,8 +9,8 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
     allowedHosts: [
-      "giftedtech.web.id",
-      "gifted-tech-website.vercel.app",         
+      "cyberx-devs-web.vercel.app",
+      "cyber-x-devs-official-web.vercel.app",         
       "localhost"                 
     ],
   },
